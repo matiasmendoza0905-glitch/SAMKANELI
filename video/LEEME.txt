@@ -1,0 +1,2 @@
+Coloca aquí tu video de presentación con el nombre exacto: hero.mp4
+(silencioso o corto, menos de 15 MB). Ver README.txt, sección 8.

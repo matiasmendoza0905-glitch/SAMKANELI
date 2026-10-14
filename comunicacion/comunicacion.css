@@ -1,0 +1,17 @@
+/* comunicacion.css */
+.bubbles{position:relative;min-height:300px;display:flex;flex-direction:column;gap:var(--s2);align-items:flex-start;justify-content:center}
+.bb{background:#fff;border-radius:22px 22px 22px 4px;padding:.9rem 1.2rem;box-shadow:var(--sombra-sm);font-weight:700;max-width:330px}
+.bb.b2{background:var(--verde);align-self:flex-end;border-radius:22px 22px 4px 22px}.bb-m{width:130px;align-self:center}
+.five{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--s2)}.five-i{border-radius:var(--r-lg);padding:var(--s3);min-height:200px;display:flex;flex-direction:column;justify-content:space-between}
+.five-i span{font:700 2.4rem var(--f-display);opacity:.6}.five-i p{font:600 1.3rem/1.2 var(--f-display);margin:0}
+.f1{background:var(--rosa)}.f2{background:var(--verde)}.f3{background:#FFE3B8;transform:translateY(1.2rem)}.f4{background:var(--rosa-suave)}.f5{background:var(--verde-suave);transform:translateY(1.2rem)}
+@media(max-width:1100px){.five{grid-template-columns:repeat(2,minmax(0,1fr))}.f3,.f5{transform:none}}@media(max-width:560px){.five{grid-template-columns:1fr}.five-i{min-height:0}}
+.pr-top{margin-bottom:var(--s3)}.pr-g{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s2)}.pr-c{border-radius:var(--r-md);padding:var(--s3)}.pr-c h4{margin-bottom:.4rem}.pr-c p{margin-bottom:.5rem}
+.pr-c.ok{background:var(--verde-suave)}.pr-c.no{background:#FBE0E8}.pr-c.ex{background:var(--rosa-suave)}.pr-c.ca{background:var(--crema-claro);border:2px solid rgba(122,67,38,.15)}
+@media(max-width:1000px){.pr-g{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.pr-g{grid-template-columns:1fr}}
+.cv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}.cv{margin:0}.cv figcaption{font:600 1.1rem var(--f-display);margin-bottom:.5rem}
+@media(max-width:900px){.cv-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.cv-grid{grid-template-columns:1fr}}
+.cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}.cmp figure{margin:0}.cmp figcaption{margin-top:.6rem;font-size:.95rem}
+.tag{display:inline-block;font-weight:800;border-radius:var(--r-pill);padding:.1rem .7rem;margin-right:.3rem}.t1{background:var(--verde);}.t2{background:#E4E4E4}.t3{background:#FFE08A}
+@media(max-width:900px){.cmp{grid-template-columns:1fr}}
+.ch{padding:var(--s2) var(--s3)}.ch h3{font-size:1.15rem;margin-bottom:.2rem}.ch p{margin-bottom:.4rem}
