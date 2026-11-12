@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auditoría de imagen | SAMKANELI</title>
+  <meta name="description" content="Propuesta de auditoría de imagen de SAMKANELI: identidad visual, percepción del público, comunicación, plan de investigación y autoanálisis de marca.">
+  <meta name="theme-color" content="#FFEED6">
+  <meta property="og:title" content="Auditoría de imagen | SAMKANELI">
+  <meta property="og:description" content="Plan de investigación para evaluar y fortalecer la imagen de SAMKANELI, el sabor que endulza nuestra selva.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="../img/mascota/mascota.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="auditoria-imagen.css">
+
+  <style>
+    .auditoria .aud-interview-section { margin: 2.25rem 0; padding: clamp(1rem, 3vw, 2rem); border: 1px solid rgba(64, 95, 54, .18); border-radius: 1.25rem; background: #fffdf8; }
+    .auditoria .aud-interview-section h4 { margin: 1.5rem 0 .75rem; }
+    .auditoria .aud-interview-questions { padding-left: 1.5rem; }
+    .auditoria .aud-interview-questions li { padding: .45rem 0; }
+    .auditoria .aud-interview-q { line-height: 1.55; }
+    .auditoria .aud-interview-person { margin: .75rem 0; border: 1px solid rgba(64, 95, 54, .2); border-radius: .9rem; background: #fff; overflow: hidden; }
+    .auditoria .aud-interview-person summary { display: flex; align-items: center; gap: .85rem; padding: 1rem; cursor: pointer; list-style: none; }
+    .auditoria .aud-interview-person summary::-webkit-details-marker { display: none; }
+    .auditoria .aud-interview-person summary::after { content: "+"; margin-left: auto; font-size: 1.35rem; color: #476d42; }
+    .auditoria .aud-interview-person[open] summary::after { content: "−"; }
+    .auditoria .aud-person-number { display: grid; place-items: center; flex: 0 0 2.5rem; height: 2.5rem; border-radius: 50%; background: #e9f1df; color: #345b32; font-weight: 800; }
+    .auditoria .aud-interview-person summary small { display: block; margin-top: .2rem; opacity: .75; line-height: 1.4; }
+    .auditoria .aud-interview-fields { display: grid; gap: 1rem; padding: 0 1rem 1rem; }
+    .auditoria .aud-answer-label { display: grid; gap: .4rem; font-weight: 700; line-height: 1.45; }
+    .auditoria .aud-answer-label textarea, .auditoria .aud-answer-label input { box-sizing: border-box; width: 100%; min-width: 0; padding: .75rem; border: 1px solid #c9d3c1; border-radius: .55rem; background: #fff; color: #253222; font: inherit; font-weight: 400; }
+    .auditoria .aud-answer-label textarea { resize: vertical; }
+    .auditoria .aud-answer-label textarea:focus, .auditoria .aud-answer-label input:focus { outline: 2px solid #719a62; outline-offset: 2px; }
+    .auditoria .aud-interview-analysis { margin-top: 1.25rem; }
+    @media (max-width: 600px) {
+      .auditoria .aud-interview-section { padding: 1rem; }
+      .auditoria .aud-interview-person summary { padding: .8rem; }
+      .auditoria .aud-interview-fields { padding: 0 .8rem .8rem; }
+    }
+  </style>
+
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-page="auditoria">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado global: un solo logotipo y una sola navegación -->
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="../index.html" aria-label="SAMKANELI, ir al inicio">
+        <img src="../img/logo/imagotipo-transparente.png" alt="SAMKANELI, el sabor que endulza nuestra selva" width="1200" height="433">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li class="has-sub">
+            <button class="sub-btn" type="button" aria-haspopup="true" aria-expanded="false">La marca <span aria-hidden="true">▾</span></button>
+            <ul class="sub">
+              <li><a href="../empresa/empresa.html">Empresa</a></li>
+              <li><a href="../publico-objetivo/publico-objetivo.html">Público objetivo</a></li>
+              <li><a href="../identidad-corporativa/identidad-corporativa.html">Identidad corporativa</a></li>
+              <li><a href="../identidad-visual/identidad-visual.html">Identidad visual</a></li>
+              <li><a href="../imagen-institucional/imagen-institucional.html">Imagen institucional</a></li>
+            </ul>
+          </li>
+          <li><a href="../aplicaciones/aplicaciones.html">Aplicaciones</a></li>
+          <li><a href="../comunicacion/comunicacion.html">Comunicación</a></li>
+          <li><a href="../manual-identidad/manual-identidad.html">Manual de identidad</a></li>
+          <li><a href="../propuestas/propuestas.html">Propuestas de mejora</a></li>
+          <li><a href="../contacto/contacto.html">Contacto</a></li>
+          <li><a href="../comunicación-corporativa/comunicación-corporativa.html">Comunicación corporativa</a></li>
+          <li><a aria-current="page" href="auditoria-imagen.html">Auditoría de imagen</a></li>
+           <li>
+        <a href="../analisis-de-imagen/analisis-imagen.html">
+analisis de imagen
+        </a>
+      </li>
+      <li>
+  <a href="../imagologia·iconologia·imagenverbal/imagologia·iconologia·imagenverbal.html">
+    Imagología · Iconología · Imagen verbal
+  </a>
+</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="auditoria">
+    <section class="aud-hero">
+      <div class="aud-wrap">
+        <span class="aud-kicker">IDENTIDAD · INVESTIGACIÓN · MEJORA CONTINUA</span>
+        <h1>Auditoría de imagen de <span>SAMKANELI</span></h1>
+        <p class="aud-lead">El sabor que endulza nuestra selva.</p>
+        <p>Esta propuesta busca evaluar cómo se presenta SAMKANELI, cómo la perciben sus clientes y qué oportunidades existen para fortalecer la identidad visual, la comunicación y la experiencia de marca.</p>
+        <a class="aud-button" href="#necesidad">Conocer la auditoría <span aria-hidden="true">↓</span></a>
+      </div>
+      <span class="aud-leaf aud-leaf-one" aria-hidden="true"></span>
+      <span class="aud-leaf aud-leaf-two" aria-hidden="true"></span>
+    </section>
+
+    <div class="franja-sabores" aria-label="Sabores e identidad de SAMKANELI">
+      <div class="franja-sabores-pista">
+        <span>✦ COCO</span><span>✦ CHOCOLATE</span><span>✦ CANELA ARTESANAL</span>
+        <span>✦ HECHO EN PANGOA</span><span>✦ SELVA CENTRAL</span><span>✦ DULCE Y CERCANO</span>
+        <span>✦ MANGO</span><span>✦ PIÑA</span><span>✦ MARACUYÁ</span><span>✦ CAMU CAMU</span>
+        <span>✦ COCO</span><span>✦ CHOCOLATE</span><span>✦ CANELA ARTESANAL</span>
+        <span>✦ HECHO EN PANGOA</span><span>✦ SELVA CENTRAL</span><span>✦ DULCE Y CERCANO</span>
+        <span>✦ MANGO</span><span>✦ PIÑA</span><span>✦ MARACUYÁ</span><span>✦ CAMU CAMU</span>
+      </div>
+    </div>  
+
+    <nav class="aud-index aud-wrap" aria-label="Índice de auditoría">
+      <a href="#necesidad">01. Investigación</a>
+      <a href="#proceso">02. Proceso</a>
+      <a href="#plan">03. Plan de investigación</a>
+      <a href="#entrevistas">Entrevistas (5 personas)</a>
+      <a href="#autoanalisis">04. Autoanálisis</a>
+      <a href="#conclusiones">05. Conclusiones</a>
+    </nav>
+
+    <section class="aud-section aud-wrap" id="necesidad">
+      <p class="aud-number">01 / NECESIDAD DE LA INVESTIGACIÓN</p>
+      <h2>¿Por qué evaluar nuestra imagen?</h2>
+      <p>La auditoría de imagen de SAMKANELI permitirá conocer cómo perciben los clientes la marca, sus productos, presentación y atención. También ayudará a evaluar si su identidad comunica coherentemente sus valores y propuesta de valor.</p>
+      <p>Además, permitirá identificar qué recuerdan los consumidores, qué esperan y qué podría diferenciar a la empresa. Los aspectos mencionados son propuestas de investigación, no resultados confirmados.</p>
+
+      <div class="aud-card-grid">
+        <article class="aud-card">
+          <span class="aud-icon" aria-hidden="true">✦</span>
+          <h3>Identidad visual</h3>
+          <p>Revisar el uso del logotipo, los colores, la tipografía, las etiquetas, los empaques y los materiales gráficos de SAMKANELI.</p>
+        </article>
+        <article class="aud-card">
+          <span class="aud-icon" aria-hidden="true">♡</span>
+          <h3>Percepción del público</h3>
+          <p>Conocer las opiniones de los clientes sobre los productos, la presentación, la atención y la experiencia de compra.</p>
+        </article>
+        <article class="aud-card">
+          <span class="aud-icon" aria-hidden="true">◎</span>
+          <h3>Comunicación de marca</h3>
+          <p>Evaluar si las publicaciones, promociones, catálogos y mensajes transmiten una imagen clara y consistente.</p>
+        </article>
+      </div>
+
+      <div class="aud-highlight">
+        <h3>1.1 Objetivo general</h3>
+        <p>Evaluar la imagen corporativa de SAMKANELI para identificar oportunidades de mejora que permitan fortalecer su identidad, conocer la percepción de los clientes y contribuir a su posicionamiento.</p>
+      </div>
+
+      <h3 class="aud-subtitle"> 1.2  OBJETIVOS ESPECÍFICOS</h3>
+      <ul class="aud-check-list">
+        <li>Conocer la percepción de los clientes sobre SAMKANELI.</li>
+        <li>Conocer la opinión de los clientes sobre la marca, sus productos, la presentación y la atención recibida.</li>
+        <li>Evaluar la comunicación de SAMKANELI en redes sociales y materiales publicitarios.</li>
+        <li>Identificar fortalezas, debilidades y oportunidades de mejora a partir de información real.</li>
+        <li>Proponer acciones para fortalecer la imagen y diferenciar la marca de otras propuestas del mercado.</li>
+      </ul>
+    </section>
+
+    
+<section class="aud-section aud-section-soft" id="proceso">
+  <div class="aud-wrap">
+
+    <p class="aud-number">02 / PROCESO DE AUDITORÍA DE LA IMAGEN</p>
+
+    <h2>¿Cómo realizaremos la auditoría?</h2>
+
+    <p>
+      El proceso examinará factores internos y externos que pueden
+      influir en la percepción de SAMKANELI. Se propone desarrollar
+      las siguientes etapas:
+    </p>
+
+    <div class="aud-steps">
+
+      <!-- ETAPA 01 -->
+      <article class="aud-step aud-step-image">
+        <div class="aud-step-photo">
+          <img src="../img/referencias/seccion1.png"
+               alt="Elementos de identidad visual de SAMKANELI"
+               loading="lazy">
+        </div>
+        <div class="aud-step-content">
+          <span class="aud-step-number">01</span>
+          <h3>Reconocimiento de la marca</h3>
+          <p>
+            Identificar qué elementos de SAMKANELI recuerdan los
+            consumidores, cómo reconocen la marca y qué atributos
+            relacionan con sus productos.
+          </p>
+        </div>
+      </article>
+
+      <!-- ETAPA 02 -->
+      <article class="aud-step aud-step-image">
+        <div class="aud-step-photo">
+          <img src="../img/referencias/seccion2.png"
+               alt="Recopilación de opiniones de los clientes"
+               loading="lazy">
+        </div>
+        <div class="aud-step-content">
+          <span class="aud-step-number">02</span>
+          <h3>Investigación de la percepción del público</h3>
+          <p>
+            Recopilar opiniones mediante encuestas y entrevistas
+            a clientes actuales y potenciales para conocer sus
+            preferencias, expectativas y experiencias con SAMKANELI.
+          </p>
+        </div>
+      </article>
+
+      <!-- ETAPA 03 -->
+      <article class="aud-step aud-step-image">
+        <div class="aud-step-photo">
+          <img src="../img/referencias/seccion3.png"
+               alt="Presentación y empaques de los productos SAMKANELI"
+               loading="lazy">
+        </div>
+        <div class="aud-step-content">
+          <span class="aud-step-number">03</span>
+          <h3>Evaluación de la presentación y comunicación</h3>
+          <p>
+            Examinar los productos, empaques, etiquetas, catálogos,
+            fotografías, promociones y publicaciones digitales para
+            determinar cómo contribuyen a comunicar la propuesta
+            de valor de SAMKANELI.
+          </p>
+        </div>
+      </article>
+
+      <!-- ETAPA 04 -->
+      <article class="aud-step aud-step-image">
+        <div class="aud-step-photo">
+          <img src="../img/referencias/seccion4.png"
+               alt="Comparación de propuestas comerciales del mercado"
+               loading="lazy">
+        </div>
+        <div class="aud-step-content">
+          <span class="aud-step-number">04</span>
+          <h3>Análisis de la competencia</h3>
+          <p>
+            Comparar la presentación de productos, la comunicación,
+            la experiencia de compra y las propuestas de valor de
+            otras marcas relevantes para reconocer oportunidades
+            de diferenciación.
+          </p>
+        </div>
+      </article>
+
+      <!-- ETAPA 05 -->
+      <article class="aud-step aud-step-image">
+        <div class="aud-step-photo">
+          <img src="../img/referencias/seccion5.png"
+               alt="Organización y análisis de resultados de la auditoría"
+               loading="lazy">
+        </div>
+        <div class="aud-step-content">
+          <span class="aud-step-number">05</span>
+          <h3>Diagnóstico y recomendaciones</h3>
+          <p>
+            Organizar los datos obtenidos para identificar fortalezas,
+            debilidades y oportunidades, y formular recomendaciones
+            viables que contribuyan a fortalecer el posicionamiento
+            de SAMKANELI.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+    <section class="aud-section aud-wrap" id="plan">
+      <p class="aud-number">03 / DESARROLLO DEL PLAN DE INVESTIGACIÓN</p>
+      <h2>Investigar para tomar mejores decisiones</h2>
+      <p>El plan ordenará las actividades, los métodos y los recursos necesarios para evaluar la imagen de SAMKANELI. La información reunida permitirá formular recomendaciones ajustadas a la realidad de la empresa.</p>
+
+      <h3 class="aud-subtitle">3.1. Planteamiento del problema</h3>
+      <p>El problema central consiste en determinar si la imagen que proyecta SAMKANELI es coherente en sus diferentes puntos de contacto y si responde a las expectativas de sus clientes. Para estudiarlo, se necesita conocer el reconocimiento de la marca, la percepción de sus productos, la consistencia de los materiales visuales y la experiencia que acompaña la compra.</p>
+      <div class="aud-question"><strong>Pregunta de investigación</strong><p>¿Cómo perciben los clientes la imagen corporativa de SAMKANELI y qué mejoras podrían fortalecer su identidad, comunicación y diferenciación?</p></div>
+
+      <h3 class="aud-subtitle">3.2. Metodología de investigación</h3>
+      <p>Se propone un enfoque mixto que combine datos cuantitativos y cualitativos:</p>
+      <div class="aud-card-grid aud-card-grid-two">
+        <article class="aud-card"><h4>Encuestas</h4><p>Recopilar valoraciones sobre reconocimiento, presentación visual, claridad de la información y experiencia de compra.</p><p class="aud-example">Pregunta sugerida: «En una escala del 1 al 5, ¿cómo calificaría la imagen visual de SAMKANELI?».</p></article>
+        <article class="aud-card"><h4>Entrevistas</h4><p>Conocer opiniones, recuerdos y sugerencias con respuestas abiertas.</p><p class="aud-example">Pregunta sugerida: «¿Qué cambiaría para mejorar la presentación o comunicación de SAMKANELI?».</p></article>
+        <article class="aud-card"><h4>Observación directa</h4><p>Examinar etiquetas, empaques, materiales promocionales, presentación de productos y facilidad para reconocer la marca.</p><p class="aud-example">Aspecto por observar: si el logotipo y la información del producto se distinguen con claridad.</p></article>
+        <article class="aud-card"><h4>Análisis de redes y materiales digitales</h4><p>Revisar la calidad de las fotografías, la regularidad de las publicaciones, la claridad de los mensajes y la uniformidad de colores y tipografías.</p><p class="aud-example">Aspecto por observar: si las piezas digitales mantienen una línea visual reconocible.</p></article>
+      </div>
+
+
+      <section class="aud-interview-section" id="entrevistas" aria-labelledby="entrevistas-titulo">
+        <p class="aud-number">ENTREVISTAS / 5 PARTICIPANTES</p>
+        <h3 class="aud-subtitle" id="entrevistas-titulo">Entrevista a cinco personas</h3>
+        <p>Se entrevistó a cinco personas para conocer sus opiniones sobre la imagen de SAMKANELI, sus rollos de canela, los empaques y la comunicación de la marca. Cada participante respondió las mismas cinco preguntas abiertas.</p>
+      
+        <div class="aud-question">
+          <strong>Objetivo de las entrevistas</strong>
+          <p>Identificar qué recuerda el público de SAMKANELI, cómo percibe sus elementos visuales y qué recomendaciones ofrece para mejorar la presentación y comunicación de la marca.</p>
+        </div>
+      
+        <h4>Participantes</h4>
+        <ul class="aud-people">
+          <li><span class="aud-person-number">1</span><span><strong>Lucía Ramírez</strong><small>Clienta actual</small></span></li>
+          <li><span class="aud-person-number">2</span><span><strong>Diego Paredes</strong><small>Cliente potencial</small></span></li>
+          <li><span class="aud-person-number">3</span><span><strong>Camila Flores</strong><small>Consumidora de repostería</small></span></li>
+          <li><span class="aud-person-number">4</span><span><strong>Andrea Quispe</strong><small>Conoce la marca por redes</small></span></li>
+          <li><span class="aud-person-number">5</span><span><strong>Jorge Mamani</strong><small>Compra para regalar</small></span></li>
+        </ul>
+      
+        <h4>Preguntas y respuestas</h4>
+      
+        <article class="aud-qa">
+          <h5><span class="aud-qa-number">1</span>¿Qué es lo primero que se te viene a la mente cuando escuchas el nombre SAMKANELI?</h5>
+          <ul class="aud-answers">
+            <li><strong>Lucía</strong><p>Rollos de canela suaves y recién hechos. Me recuerdan al aroma de la cocina de mi abuela.</p></li>
+            <li><strong>Diego</strong><p>Me suena a algo dulce y diferente. El nombre es raro, pero se queda en la cabeza.</p></li>
+            <li><strong>Camila</strong><p>Pienso en postres artesanales con un toque de la selva, hechos con cariño.</p></li>
+            <li><strong>Andrea</strong><p>Lo primero que recuerdo es el color rosado de las publicaciones y los rollos con glaseado.</p></li>
+            <li><strong>Jorge</strong><p>Un regalo dulce para compartir en familia o llevar a una reunión.</p></li>
+          </ul>
+        </article>
+      
+        <article class="aud-qa">
+          <h5><span class="aud-qa-number">2</span>¿Qué opinas del nombre, el logotipo y los colores que utiliza la marca?</h5>
+          <ul class="aud-answers">
+            <li><strong>Lucía</strong><p>El rosa y el crema se ven alegres y combinan con el producto. El logotipo se lee bien.</p></li>
+            <li><strong>Diego</strong><p>El nombre es original, aunque al principio no sabía cómo pronunciarlo. Los colores llaman la atención.</p></li>
+            <li><strong>Camila</strong><p>Me gustan los colores suaves y dulces. Haría el logotipo un poco más grande en los empaques.</p></li>
+            <li><strong>Andrea</strong><p>Se ve juvenil y simpático, sobre todo con la mascota. En redes se reconoce rápido.</p></li>
+            <li><strong>Jorge</strong><p>Transmite calidez. El logotipo podría destacar más en la caja para reconocerlo al instante.</p></li>
+          </ul>
+        </article>
+      
+        <article class="aud-qa">
+          <h5><span class="aud-qa-number">3</span>¿Qué impresión te genera la presentación de los rollos de canela y sus empaques?</h5>
+          <ul class="aud-answers">
+            <li><strong>Lucía</strong><p>Se ven apetitosos y bien cuidados. El empaque protege los rollos y se siente de calidad.</p></li>
+            <li><strong>Diego</strong><p>Me parece bonito, pero me gustaría ver los ingredientes y el peso con más claridad.</p></li>
+            <li><strong>Camila</strong><p>Es atractivo para regalar. Quisiera que fuera más fácil de abrir y de guardar.</p></li>
+            <li><strong>Andrea</strong><p>En fotos lucen muy bien. En persona esperaría una etiqueta que repita el diseño de las redes.</p></li>
+            <li><strong>Jorge</strong><p>Es práctico para llevar. Agregaría una tarjeta pequeña con un mensaje para obsequiar.</p></li>
+          </ul>
+        </article>
+      
+        <article class="aud-qa">
+          <h5><span class="aud-qa-number">4</span>¿Consideras que el eslogan «El sabor que endulza nuestra selva» representa adecuadamente la identidad de la marca? ¿Por qué?</h5>
+          <ul class="aud-answers">
+            <li><strong>Lucía</strong><p>Sí, porque la canela y lo dulce recuerdan a lo cálido y natural de la selva.</p></li>
+            <li><strong>Diego</strong><p>En parte. Entiendo lo dulce, pero la conexión con la selva casi no se nota en el diseño.</p></li>
+            <li><strong>Camila</strong><p>Sí, suena a algo de nuestra región. Podría reflejarse más con hojas o frutas amazónicas.</p></li>
+            <li><strong>Andrea</strong><p>Me gusta, es fácil de recordar. Debería aparecer siempre junto al logotipo.</p></li>
+            <li><strong>Jorge</strong><p>Sí, da idea de un producto local hecho con cariño. Lo reforzaría con sabores regionales.</p></li>
+          </ul>
+        </article>
+      
+        <article class="aud-qa">
+          <h5><span class="aud-qa-number">5</span>¿Qué recomendaciones darías para que SAMKANELI sea una marca más reconocida y atractiva para los consumidores?</h5>
+          <ul class="aud-answers">
+            <li><strong>Lucía</strong><p>Publicar con más frecuencia y mostrar cómo se preparan los rollos.</p></li>
+            <li><strong>Diego</strong><p>Hacer promociones por temporada y sorteos para que más gente conozca la marca.</p></li>
+            <li><strong>Camila</strong><p>Crear sabores nuevos con frutas de la región y presentarlos en las redes.</p></li>
+            <li><strong>Andrea</strong><p>Mantener los mismos colores y estilo de fotos en todas las publicaciones, y responder rápido los mensajes.</p></li>
+            <li><strong>Jorge</strong><p>Ofrecer cajas para regalo y combos para fechas especiales, con precios claros.</p></li>
+          </ul>
+        </article>
+      
+      </section>
+      
+
+      
+<section class="aud-section" id="poblacion-muestra">
+  <h3>3.3. Población y muestra</h3>
+
+  <p>
+      La población de interés estará formada por clientes actuales
+      y potenciales de SAMKANELI. La muestra se seleccionará de
+      acuerdo con el tiempo, los recursos y el acceso a los
+      participantes. Como propuesta académica inicial, se podría
+      encuestar a 30 personas; esta cifra es ilustrativa y no
+      garantiza que los resultados representen a todos los
+      consumidores. El número final deberá definirse antes de
+      aplicar el instrumento.
+  </p>
+
+  <div class="aud-poblacion-imagen">
+      <img
+          src="../img/referencias/Encuesta Dulce en Samkaneli.png"
+          alt="Clientes y consumidores de los productos SAMKANELI"
+          loading="lazy"
+      >
+  </div>
+</section>
+
+
+      <h3 class="aud-subtitle">3.5. Cronograma propuesto</h3>
+      <div class="aud-timeline">
+        <article><span>SEMANA 1</span><h4>Planificación</h4><p>Definir objetivos, preparar instrumentos y organizar los recursos.</p></article>
+        <article><span>SEMANA 2</span><h4>Recopilación</h4><p>Aplicar encuestas, realizar entrevistas y observar materiales de marca.</p></article>
+        <article><span>SEMANA 3</span><h4>Análisis</h4><p>Ordenar la información, identificar patrones y redactar el diagnóstico.</p></article>
+        <article><span>SEMANA 4</span><h4>Propuestas</h4><p>Preparar el informe y priorizar acciones de mejora.</p></article>
+      </div>
+      <p class="aud-note">El cronograma es una propuesta de trabajo y puede ajustarse según la disponibilidad de participantes y recursos.</p>
+
+      <h3 class="aud-subtitle">3.6. Resultados esperados</h3>
+      <ul class="aud-check-list">
+        <li>Conocer cómo reconocen y describen los clientes la marca SAMKANELI.</li>
+        <li>Identificar si logotipo, colores, tipografías, etiquetas y materiales promocionales mantienen coherencia.</li>
+        <li>Reconocer oportunidades para mejorar la presentación de productos y la comunicación digital.</li>
+        <li>Obtener un diagnóstico respaldado por encuestas, entrevistas y observaciones.</li>
+        <li>Proponer acciones concretas para fortalecer la imagen corporativa.</li>
+      </ul>
+    </section>
+
+    <section class="aud-section aud-section-green" id="autoanalisis">
+      <div class="aud-wrap">
+        <p class="aud-number">04 / PROCESO DE AUTOANÁLISIS DE LA IMAGEN</p>
+        <h2>Mirar nuestra marca desde dentro</h2>
+        <p>El autoanálisis consiste en revisar críticamente cómo SAMKANELI presenta su marca, qué recursos utiliza y qué aspectos necesita evaluar. Se diferencia de la auditoría general porque se centra inicialmente en la revisión interna, aunque luego debe contrastarse con las opiniones del público.</p>
+        
+<div class="aud-card-grid aud-card-grid-imagenes">
+
+  <!-- 4.1 IDENTIDAD VISUAL -->
+  <article class="aud-card aud-card-con-imagen">
+    <div class="aud-card-imagen">
+      <img
+        src="../img/referencias/4.1.png"
+        alt="Identidad visual y empaques de SAMKANELI"
+        loading="lazy"
+      >
+    </div>
+    <div class="aud-card-contenido">
+      <h3>
+        <span class="aud-card-numero">4.1.</span>
+        Identidad visual
+      </h3>
+      <p>
+        Revisar el uso del logotipo, la paleta de colores, las
+        tipografías, la mascota, el eslogan, las etiquetas y los
+        empaques para comprobar si mantienen una identidad común.
+      </p>
+    </div>
+  </article>
+
+  <!-- 4.2 COMUNICACIÓN -->
+  <article class="aud-card aud-card-con-imagen">
+    <div class="aud-card-imagen">
+      <img
+        src="../img/referencias/4.2.png"
+        alt="Comunicación publicitaria de SAMKANELI en redes sociales"
+        loading="lazy"
+      >
+    </div>
+    <div class="aud-card-contenido">
+      <h3>
+        <span class="aud-card-numero">4.2.</span>
+        Comunicación
+      </h3>
+      <p>
+        Evaluar si los mensajes publicitarios explican con claridad
+        la propuesta de SAMKANELI y si el tono y el diseño son
+        consistentes entre publicaciones, catálogos y promociones.
+      </p>
+    </div>
+  </article>
+
+  <!-- 4.3 ATENCIÓN AL CLIENTE -->
+  <article class="aud-card aud-card-con-imagen">
+    <div class="aud-card-imagen">
+      <img
+        src="../img/referencias/4.3.png"
+        alt="Atención y orientación a los clientes de SAMKANELI"
+        loading="lazy"
+      >
+    </div>
+    <div class="aud-card-contenido">
+      <h3>
+        <span class="aud-card-numero">4.3.</span>
+        Atención al cliente
+      </h3>
+      <p>
+        Proponer la revisión de la forma en que se responden
+        consultas, se informa sobre los productos y se atienden
+        sugerencias o reclamos. Estos aspectos deberán comprobarse
+        con observación y opiniones de clientes.
+      </p>
+    </div>
+  </article>
+
+  <!-- 4.4 PRESENCIA DIGITAL -->
+  <article class="aud-card aud-card-con-imagen">
+    <div class="aud-card-imagen">
+      <img
+        src="../img/referencias/4.4.png"
+        alt="Presencia digital de SAMKANELI en su página web y redes sociales"
+        loading="lazy"
+      >
+    </div>
+    <div class="aud-card-contenido">
+      <h3>
+        <span class="aud-card-numero">4.4.</span>
+        Presencia digital
+      </h3>
+      <p>
+        Revisar si los perfiles y materiales digitales presentan
+        información clara y actualizada, fotografías adecuadas y
+        una línea visual reconocible.
+      </p>
+    </div>
+  </article>
+
+</div>
+
+
+        
+
+<!-- 4.5 FORTALEZAS Y DEBILIDADES -->
+<section class="aud-swot-section aud-swot-45">
+  <div class="aud-swot-heading">
+    <span class="aud-swot-kicker">04 / AUTOANÁLISIS</span>
+    <h3>Fortalezas y debilidades</h3>
+    <p>Reconocer los recursos de SAMKANELI y los aspectos que conviene evaluar.</p>
+  </div>
+
+  <div class="aud-swot-grid">
+
+    <article class="aud-swot-card aud-swot-strength">
+      <div class="aud-swot-card-top">
+        <span class="aud-swot-icon">✦</span>
+        <span class="aud-swot-label">01 · INTERNO</span>
+      </div>
+      <h4>Fortalezas por potenciar</h4>
+      <p class="aud-swot-intro">Aspectos que podrían favorecer a la marca.</p>
+      <ul>
+        <li>El nombre SAMKANELI y el eslogan pueden ayudar a construir una identidad reconocible.</li>
+        <li>La mascota y los recursos gráficos pueden aportar personalidad si se aplican de manera consistente.</li>
+        <li>La variedad de materiales de marca puede facilitar una presentación coordinada en diferentes canales.</li>
+      </ul>
+    </article>
+
+    <article class="aud-swot-card aud-swot-weakness">
+      <div class="aud-swot-card-top">
+        <span class="aud-swot-icon">⌕</span>
+        <span class="aud-swot-label">02 · POR EVALUAR</span>
+      </div>
+      <h4>Aspectos por revisar</h4>
+      <p class="aud-swot-intro">Puntos que necesitan comprobación.</p>
+      <ul>
+        <li>Posibles diferencias en el uso de colores, tipografías o logotipo entre materiales.</li>
+        <li>Claridad y calidad de las fotografías de productos.</li>
+        <li>Consistencia de los mensajes y de la información publicada.</li>
+        <li>Existencia de mecanismos para recopilar y analizar opiniones de clientes.</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <p class="aud-swot-note">
+    <strong>Nota:</strong> estos puntos son hipótesis de revisión y deberán contrastarse con información real.
+  </p>
+</section>
+
+
+
+<!-- 4.6 OPORTUNIDADES Y AMENAZAS -->
+<section class="aud-swot-section aud-swot-46">
+
+  <div class="aud-swot-heading">
+    <span class="aud-swot-kicker">04 / ENTORNO EXTERNO</span>
+    <h3>Oportunidades y amenazas</h3>
+    <p>Identificar factores del entorno que pueden influir en el posicionamiento de SAMKANELI.</p>
+  </div>
+
+  <div class="aud-swot-grid">
+
+    <!-- OPORTUNIDADES -->
+    <article class="aud-swot-card aud-swot-opportunity">
+
+      <div class="aud-swot-image">
+        <img
+          src="../img/referencias/Escaparate tropical de Samkanel.png"
+          alt="Oportunidades de crecimiento y promoción de SAMKANELI"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="aud-swot-card-top">
+        <span class="aud-swot-icon">↗</span>
+        <span class="aud-swot-label">03 · CRECIMIENTO</span>
+      </div>
+
+      <h4>Oportunidades por explorar</h4>
+      <p class="aud-swot-intro">Posibles caminos para fortalecer la marca.</p>
+
+      <ul>
+        <li>Crear contenido que explique la identidad y los atributos reales de los productos.</li>
+        <li>Mejorar la presentación visual de etiquetas, empaques y catálogos.</li>
+        <li>Unificar la comunicación entre redes sociales y materiales impresos.</li>
+      </ul>
+
+    </article>
+
+    <!-- AMENAZAS -->
+    <article class="aud-swot-card aud-swot-threat">
+
+      <div class="aud-swot-image">
+        <img
+          src="../img/referencias/Amenazas externas para SAMKANELI.png"
+          alt="Factores externos que pueden afectar a SAMKANELI"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="aud-swot-card-top">
+        <span class="aud-swot-icon">!</span>
+        <span class="aud-swot-label">04 · PREVENCIÓN</span>
+      </div>
+
+      <h4>Amenazas que deben observarse</h4>
+      <p class="aud-swot-intro">Factores externos que conviene monitorear.</p>
+
+      <ul>
+        <li>Competidores con una identidad visual más reconocible.</li>
+        <li>Cambios en las preferencias de los consumidores.</li>
+        <li>Comentarios o consultas digitales que no reciban respuesta oportuna.</li>
+      </ul>
+
+    </article>
+
+  </div>
+</section>
+
+
+        
+
+<!-- 4.7 PROPUESTA DE ACCIONES DE MEJORA -->
+<section class="aud-swot-section aud-mejora-section">
+
+  <div class="aud-swot-heading">
+    <span class="aud-swot-kicker">04 / PLAN DE ACCIÓN</span>
+    <h3>Propuesta de acciones de mejora</h3>
+    <p>
+      Acciones para fortalecer la comunicación, la presentación
+      y el posicionamiento de SAMKANELI.
+    </p>
+  </div>
+
+  <div class="aud-mejora-grid">
+
+    <article class="aud-mejora-card">
+      <div class="aud-mejora-top">
+        <span class="aud-mejora-icon">✦</span>
+        <span class="aud-mejora-label">01 · IDENTIDAD</span>
+      </div>
+      <h4>Unificar la presentación de marca</h4>
+      <p>
+        Establecer criterios claros para aplicar el logotipo,
+        los colores y las tipografías en los materiales.
+      </p>
+    </article>
+
+    <article class="aud-mejora-card">
+      <div class="aud-mejora-top">
+        <span class="aud-mejora-icon">▧</span>
+        <span class="aud-mejora-label">02 · PRODUCTO</span>
+      </div>
+      <h4>Mejorar etiquetas y empaques</h4>
+      <p>
+        Revisar la legibilidad y consistencia de las etiquetas,
+        los empaques y los catálogos de SAMKANELI.
+      </p>
+    </article>
+
+    <article class="aud-mejora-card">
+      <div class="aud-mejora-top">
+        <span class="aud-mejora-icon">◎</span>
+        <span class="aud-mejora-label">03 · COMUNICACIÓN</span>
+      </div>
+      <h4>Optimizar las fotografías</h4>
+      <p>
+        Mejorar la calidad y uniformidad de las fotografías
+        de los rollos de canela y sus presentaciones.
+      </p>
+    </article>
+
+    <article class="aud-mejora-card">
+      <div class="aud-mejora-top">
+        <span class="aud-mejora-icon">↗</span>
+        <span class="aud-mejora-label">04 · REDES SOCIALES</span>
+      </div>
+      <h4>Organizar las publicaciones</h4>
+      <p>
+        Crear un calendario de contenidos con mensajes claros
+        y coherentes para las redes sociales.
+      </p>
+    </article>
+
+    <article class="aud-mejora-card">
+      <div class="aud-mejora-top">
+        <span class="aud-mejora-icon">♡</span>
+        <span class="aud-mejora-label">05 · CLIENTES</span>
+      </div>
+      <h4>Fortalecer la atención al cliente</h4>
+      <p>
+        Definir un procedimiento para responder consultas
+        y recoger opiniones y sugerencias.
+      </p>
+    </article>
+
+    <article class="aud-mejora-card">
+      <div class="aud-mejora-top">
+        <span class="aud-mejora-icon">✓</span>
+        <span class="aud-mejora-label">06 · SEGUIMIENTO</span>
+      </div>
+      <h4>Evaluar los avances</h4>
+      <p>
+        Revisar periódicamente las mejoras y comparar los
+        resultados con la información inicial de la auditoría.
+      </p>
+    </article>
+
+  </div>
+</section>
+</main>
+
+<section class="aud-section aud-wrap aud-conclusiones" id="conclusiones">
+
+  <div class="aud-conclusiones-contenido">
+
+    <span class="aud-conclusiones-etiqueta">
+      05 / CONCLUSIONES
+    </span>
+
+    <h2>Una marca coherente deja huella</h2>
+
+    <p>
+      La auditoría de imagen de SAMKANELI permitirá analizar cómo se presenta la marca y cómo la perciben sus clientes. Se revisarán la identidad visual, la comunicación, los materiales de marca y la experiencia de compra para identificar fortalezas y oportunidades de mejora.
+    </p>
+
+    <p>
+      La investigación recopilará información mediante encuestas, entrevistas, observación y revisión de los canales digitales. Además, el autoanálisis permitirá evaluar las prácticas internas y contrastarlas con las opiniones de los clientes.
+    </p>
+
+    <p>
+      Finalmente, se propondrán mejoras basadas en los resultados obtenidos para fortalecer una imagen coherente, reconocible y diferenciada, vinculada con los sabores de la Selva Central.
+    </p>
+
+    <div class="aud-conclusiones-paso">
+      <span class="aud-conclusiones-paso-icon">✦</span>
+      <div>
+        <h3>Próximo paso</h3>
+        <p>
+          Aplicar los instrumentos de investigación, analizar las
+          respuestas y completar el diagnóstico con evidencia real.
+        </p>
+      </div>
+    </div>
+
+    <a class="aud-conclusiones-boton"
+       href="../contacto/contacto.html">
+      Contactar a SAMKANELI <span aria-hidden="true">→</span>
+    </a>
+
+  </div>
+
+  <div class="aud-conclusiones-visual">
+    <div class="aud-conclusiones-imagen">
+      <img
+        src="../img/referencias/Identidad tropical de SAMKANELÍ.png"
+        alt="Productos y presentación de la marca SAMKANELI"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="aud-conclusiones-frase">
+      <span>EL SABOR QUE ENDULZA NUESTRA SELVA</span>
+      <p>Una identidad dulce, cercana y memorable.</p>
+    </div>
+  </div>
+
+</section>
+
+  <footer class="site-footer">
+    <div class="wrap foot-grid">
+      <div class="foot-brand">
+        <img class="foot-logo" src="../img/logo/imagotipo-rosa-blanco.png" alt="SAMKANELI" width="1200" height="541" loading="lazy" decoding="async">
+        <p class="foot-slogan">SAMKANELI — El sabor que endulza nuestra selva.</p>
+      </div>
+      <nav aria-label="Mapa del sitio">
+        <h2 class="foot-h">Explora</h2>
+        <ul class="foot-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../empresa/empresa.html">Empresa</a></li>
+          <li><a href="../publico-objetivo/publico-objetivo.html">Público objetivo</a></li>
+          <li><a href="../identidad-corporativa/identidad-corporativa.html">Identidad corporativa</a></li>
+          <li><a href="../identidad-visual/identidad-visual.html">Identidad visual</a></li>
+          <li><a href="../imagen-institucional/imagen-institucional.html">Imagen institucional</a></li>
+          <li><a href="../aplicaciones/aplicaciones.html">Aplicaciones</a></li>
+          <li><a href="../comunicacion/comunicacion.html">Comunicación</a></li>
+          <li><a href="../manual-identidad/manual-identidad.html">Manual de identidad</a></li>
+          <li><a href="../propuestas/propuestas.html">Propuestas de mejora</a></li>
+          <li><a href="../contacto/contacto.html">Contacto</a></li>
+          <li><a href="../comunicación-corporativa/comunicación-corporativa.html">Comunicación corporativa</a></li>
+          <li><a aria-current="page" href="auditoria-imagen.html">Auditoría de imagen</a></li>
+          <li><a href="../analisis-de-imagen/analisis-imagen.html">analisis de imagen</a></li>
+          <li><a href="../imagologia·iconologia·imagenverbal/imagologia·iconologia·imagenverbal.html">Imagología · Iconología · Imagen verbal</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="foot-h">Escríbenos</h2>
+        <ul class="foot-contact">
+          <li><a data-contact="whatsapp" href="https://w.app/rollkaneli">WhatsApp</a></li>
+          <li><a data-contact="instagram" href="../contacto/contacto.html#instagram">Instagram</a></li>
+          <li><a data-contact="facebook" href="https://www.facebook.com/profile.php?id=61590356957658">Facebook</a></li>
+          <li><a data-contact="tiktok" href="https://www.tiktok.com/@kaneli_sctrl">TikTok</a></li>
+          <li><a data-contact="email" href="mailto:samkaneliroll@gmail.com">Correo electrónico</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal wrap"><p>© 2026 SAMKANELI. Todos los derechos reservados.</p></div>
+  </footer>
+  <script src="../config.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
